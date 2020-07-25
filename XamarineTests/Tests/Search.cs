@@ -24,10 +24,14 @@ namespace XamarineTests.Tests
         [Test]
         public void SearchMobilePhone()
         {
-            app.Tap(c => c.Id("menu_search");
-            app.Tap(c => c.Id("menu_search");
-            app.Tap(c => c.Id("menu_search");
+            app.Tap(c => c.Id("nextView"));
+            app.Tap(c => c.Id("nextView"));
+            app.Tap(c => c.Id("nextView"));
+            app.Tap(c => c.Id("nextView"));
+            app.Tap(c => c.Id("nextView"));
+            app.Tap(c => c.Id("menu_search"));
             app.EnterText("Samsung");
+            app.ScrollDown();
             app.ClearText();
             app.EnterText("Nexus");
             app.DismissKeyboard();
